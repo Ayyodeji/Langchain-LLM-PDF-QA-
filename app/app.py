@@ -124,7 +124,7 @@ async def chat() -> Chain:
         await cl.Message(content=f"Error: {e}").send()
 
     llm = ChatOpenAI(
-        model='gpt-3.5-turbo-16k-0613',
+        model='gpt-4o',
         temperature=0,
         streaming=True
     )
